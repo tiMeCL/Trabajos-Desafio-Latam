@@ -36,18 +36,15 @@ body {
   align-items: center;
 }
 .main {
-  grid-area: main;
   border: 1px solid white;
-  border-top-left-radius: 75px 400px;
-  background: white;
-  border-bottom-left-radius: 200px 400px;
+  background-color: white;
 }
 .footer {
   grid-area: footer;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  max-height: 200px;
-  height: 50px;
+  height: 10rem;
   justify-content: center;
   font-weight: 900;
 }
