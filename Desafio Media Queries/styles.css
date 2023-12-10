@@ -38,6 +38,12 @@ body {
   justify-content: center;
 }
 
+.colorform {
+  width: 100%;
+  padding: 6px;
+  background-color: rgba(128, 128, 128, 0.381);
+}
+
 .main {
   grid-area: main;
   border: 1px solid white;
