@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto auto;
+  min-height: 100vh;
+  grid-template-areas:
+    "sidebar content"
+    "sidebar footer";
+}
+
+/* Estilos del menú lateral */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.logo {
+  width: 200px;
+  height: 160px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content {
+  grid-area: content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  color: #fff;
+  
+}
+
+.divfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.imganim {
+  width: 300px;
+  height: 300px;
+  transform: scale(1);
+  transition: transform 1s ease 0s;
+  filter: grayscale(1);
+  
+}
+
+.imganim:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    
+}
+
+/* Media queries para hacerlo responsivo */
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 130px;
+    grid-template-areas:
+      "navbar2"
+      "content"
+      "footer";
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .navbar2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    height: 150px;
+  }
+
+  .logomobile {
+    width: 100px;
+  }
+  .menu2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    height: 100px;
+  }
+
+  .content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .divfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+}
+
+@media screen and (min-width: 577px) {
+  .navbar2 {
+    display: none;
+  }
+  .logomobile {
+    display: none;
+  }
+}
