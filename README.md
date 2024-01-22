@@ -3,8 +3,10 @@
 
 */Desafío Grid
 
-*/Desafió Media Queries
+*/Desafío Media Queries
 
-*/Desafió Animaciones CSS
+*/Desafío Animaciones CSS
 
-*/Desafió Java Script
+*/Desafío JavaScript
+
+*/Desafío JavaScript 2 (3 en 1)

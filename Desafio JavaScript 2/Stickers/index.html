@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de Stickers</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="titulo">
+      <h1>Elige tus Stickers!</h1>
+    </div>
+    <main class="main">
+    <section class="container">
+      <div class="imgcontainer">
+        <img
+          class="sticker"
+          id="img_sticker"
+          src="./assets/img/mario.png"
+        />
+        <input
+          class="inputimg"
+          type="number"
+          id="cantidad_1"
+          value="0"
+          min="0"
+          max="10"
+        />
+      </div>
+      <div class="imgcontainer">
+        <img
+          class="sticker"
+          id="img_sticker"
+          src="./assets/img/Link_BotW.png"
+        />
+        <input
+          class="inputimg"
+          type="number"
+          id="cantidad_2"
+          value="0"
+          min="0"
+          max="10"
+        />
+      </div>
+      <div class="imgcontainer">
+        <img
+          class="sticker"
+          id="img_sticker"
+          src="./assets/img/Donkey-Kong.png"
+        />
+        <input
+          class="inputimg"
+          type="number"
+          id="cantidad_3"
+          value="0"
+          min="0"
+          max="10"
+        />
+      </div>      
+    </section>
+    <p id="resultado"> Esta es tu cantidad de stickers seleccionados: 0</p>
+    <button onclick="verificarCantidad()">Verificar</button>
+  </main>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
