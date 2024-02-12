@@ -64,7 +64,7 @@ for (e of tres_propiedades) {
           ${e.descripcion}
         </p>
         <p>
-          <i class="fas fa-map-marker-alt"></i> 123 ${e.ubicacion}
+          <i class="fas fa-map-marker-alt"></i> ${e.ubicacion}
         </p>
         <p>
           <i class="fas fa-bed"></i> ${e.habitaciones} Habitaciones |
