@@ -80,7 +80,7 @@ async function graphCurrency(valorDivisa) {
             label:
               "Últimos 10 valores registrados de " + valorDivisa.toUpperCase(),
             backgroundColor: "black",
-            borderColor: "red",
+            borderColor: "green",
             data: yValues.reverse(),
             id: valorDivisa,
           },
