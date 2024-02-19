@@ -10,7 +10,6 @@ async function calcular() {
       const resultado = document.querySelector("#cambio-resultado");
       const pesos = Number(document.querySelector("#clp").value);
       
-      let newPesos = new Intl.NumberFormat
 
       const divisa = Number(data.serie[0].valor);
 
