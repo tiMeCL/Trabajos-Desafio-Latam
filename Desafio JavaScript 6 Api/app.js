@@ -9,27 +9,29 @@ async function calcular() {
 
       const resultado = document.querySelector("#cambio-resultado");
       const pesos = Number(document.querySelector("#clp").value);
+      
+      let newPesos = new Intl.NumberFormat
 
-      const currency = Number(data.serie[0].valor);
+      const divisa = Number(data.serie[0].valor);
 
-      const preConversion = pesos / currency;
-      const conversion = Number(preConversion.toFixed(2));
+      const preCalculo = pesos / divisa;
+      const calculo = Number(preCalculo.toFixed(2));
 
       switch (valorDivisa) {
         case "dolar":
-          resultado.innerHTML = `Resultado: $ ` + conversion;
+          resultado.innerHTML = `Valor en Dolares: ` + calculo;
           break;
         case "euro":
-          resultado.innerHTML = `Resultado: € ` + conversion;
+          resultado.innerHTML = `Valor en Euros: ` + calculo;
           break;
         case "bitcoin":
-          resultado.innerHTML = `Resultado: ₿ ` + conversion;
+          resultado.innerHTML = `Valor en Bitcoin: ` + calculo;
           break;
         case "uf":
-          resultado.innerHTML = `Resultado: UF ` + conversion;
+          resultado.innerHTML = `Valor en UF: ` + calculo;
           break;
         case "utm":
-          resultado.innerHTML = `Resultado: UTM ` + conversion;
+          resultado.innerHTML = `Valor en UTM: ` + calculo;
           break;
       }
       graphCurrency(valorDivisa);
@@ -78,7 +80,7 @@ async function graphCurrency(valorDivisa) {
         datasets: [
           {
             label:
-              "Últimos 10 valores registrados de " + valorDivisa.toUpperCase(),
+              "Estos son los 10 valores mas actualizados de la Divisa Seleccionada en el Histórico " + valorDivisa.toUpperCase(),
             backgroundColor: "black",
             borderColor: "green",
             data: yValues.reverse(),
