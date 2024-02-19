@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <section class="super-container">
+    <div class="big-container">
+      <img
+        style="width: 100px"
+        src="./assets/img/icono.png"
+        alt="Logo Conversor"
+        class="icono-conversor"
+      />
+      <h1>Conversor de Moneda Nacional</h1>
+
+      <h2>Chilean Peso</h2>
+
+      <div class="contenedor">
+        <div class="moneda">
+          <input class="chileanpeso" type="number" id="clp" placeholder="0" />
+        </div>
+      </div>
+
+      <div class="contenedor-botones">
+        <button class="btn" id="taza-cambio" type="button" onclick="calcular()">
+          Cambio
+        </button>
+      </div>
+
+      <div class="moneda">
+        <select id="moneda-cambio">
+          <option value="" selected>Seleccionar Moneda</option>
+          <option value="dolar">Dólar</option>
+          <option value="euro">Euro</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="uf">UF</option>
+          <option value="utm">UTM</option>
+        </select>
+
+        <div class="cambio" id="cambio-resultado"></div>
+      </div>
+    </div>
+
+    <div class="graph">
+        <canvas id="myChart"></canvas>
+    </div>
+</section>
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  </body>
+</html>

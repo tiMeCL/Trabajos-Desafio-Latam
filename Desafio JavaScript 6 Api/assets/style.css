@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://wallpapers.com/images/hd/glowing-green-bitcoin-tzotf1rswnwcb04o.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+.super-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.753);
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.moneda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#moneda-cambio {
+    text-align: center;
+}
+
+.chileanpeso {
+  width: 300px;
+  font-size: large;
+  text-align: center;
+}
+
+.cambio {
+  font-size: x-large;
+  padding-top: 20px;
+}
+
+select {
+  width: 300px;
+  font-size: large;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  font-size: large;
+}
+
+.graph {
+    padding-top: 20px;
+}
