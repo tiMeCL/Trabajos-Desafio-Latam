@@ -19,3 +19,7 @@
 */Desafío JavaScript 5 (Lista de tareas)
 
 */Desafío JavaScript 6 (Api Conversor de Moneda)
+
+----------------------------------------------------
+
+*/Desafío React 1 (Adopta 1 perrito)
