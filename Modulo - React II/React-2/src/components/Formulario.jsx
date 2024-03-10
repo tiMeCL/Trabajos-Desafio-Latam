@@ -51,7 +51,7 @@ const Formulario = () => {
 
         {verificacion ? <p className="verificacion">Registro exitoso!!!</p> : null}        
 
-        <div className="form-group">
+        <div className="form-group mt-3">
           <label>Nombre</label>
           <input
             type="text"
@@ -91,7 +91,7 @@ const Formulario = () => {
             value={confirmarContraseña}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary mt-3">
           Enviar
         </button>
       </form>

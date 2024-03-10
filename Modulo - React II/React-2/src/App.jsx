@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       
-      <h2>Crea una cuenta</h2>
+      <h2 className="text-center">Crea una cuenta</h2>
       
       <div className="Card">
       
