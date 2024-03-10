@@ -10,13 +10,13 @@ const Formulario = () => {
   const [error, setError] = useState("");
   const [verificacion, setVerificacion] = useState("");
 
-  const [alertMessage, setAlertMessage] = useState("");
-  const [alertType, setAlertType] = useState("");
+  //const [alertMessage, setAlertMessage] = useState("");
+  //const [alertType, setAlertType] = useState("");
 
-  const handleAlert = (message, type) => {
-    setAlertMessage(message);
-    setAlertType(type);
-  };
+  //const handleAlert = (message, type) => {
+    //setAlertMessage(message);
+    //setAlertType(type);//
+  //};
 
   const handleRegister = (message, type) => {
     setAlertMessage(message);
