@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 
 
 function App() {
+
   
   return (
     <>
@@ -15,7 +16,7 @@ function App() {
       
       <div className="Card">
       
-      <Registro/>
+      <Registro />
       
       </div>
       
