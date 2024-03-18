@@ -24,6 +24,6 @@
 
 */Desafío React 1 (Adopta 1 perrito)
 
-*/Desafío React 2 (Formulario de Registro)
+*/Desafío React 2 (Formulario de Registro) Trabajo con Tomas Peña
 
-*/Desafío React 3 (Base Colaboradores)
+*/Desafío React 3 (Base Colaboradores) Trabajo con Tomas Peña
